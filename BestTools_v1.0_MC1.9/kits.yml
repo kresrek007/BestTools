@@ -1,0 +1,66 @@
+#-=-=-=-=-=-=-=-=-=-=-=-=#
+#                        #  
+#   Name:    BestTools   #
+#   Version: 1.0 BETA    #
+#   Author:  Kresrek007  #
+#                        #  
+#-=-=-=-=-=-=-=-=-=-=-=-=#
+
+kits:
+  gracz:
+    cooldown: 86400
+    permission: BestTools.kit.gracz
+    items:
+      '0':
+        material:
+          id: 257
+          data: 0
+          number: 1
+        display:
+          name: '&8> &cKIT: &e&oGracz &8<'
+          lore: []
+        enchantments: []
+      '1':
+        material:
+          id: 306
+          data: 0
+          number: 1
+        display:
+          name: '&8> &cKIT: &e&oGracz &8<'
+          lore: []
+        enchantments:
+        - 0;3
+        - 34;2
+      '2':
+        material:
+          id: 307
+          data: 0
+          number: 1
+        display:
+          name: '&8> &cKIT: &e&oGracz &8<'
+          lore: []
+        enchantments:
+        - 0;3
+        - 34;2
+      '3':
+        material:
+          id: 308
+          data: 0
+          number: 1
+        display:
+          name: '&8> &cKIT: &e&oGracz &8<'
+          lore: []
+        enchantments:
+        - 0;3
+        - 34;2
+      '4':
+        material:
+          id: 309
+          data: 0
+          number: 1
+        display:
+          name: '&8> &cKIT: &e&oGracz &8<'
+          lore: []
+        enchantments:
+        - 0;3
+        - 34;2

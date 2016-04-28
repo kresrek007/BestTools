@@ -1,0 +1,322 @@
+#-=-=-=-=-=-=-=-=-=-=-=-=#
+#                        #  
+#   Name:    BestTools   #
+#   Version: 1.0 BETA    #
+#   Author:  Kresrek007  #
+#                        #  
+#-=-=-=-=-=-=-=-=-=-=-=-=#
+
+# Opcja dla developera
+debug: false
+
+# Zapis plikow
+# Flat - lokalne pliki
+# MySQL - baza danych mysql
+dataType: flat
+
+
+mysql:
+  #Dane do polaczenia z serwerem mysql
+  server:
+    host: localhost
+    user: root
+    database: data
+    password: pass
+    port: 3306
+  #Nazwy tabelek w mysql
+  table:
+    user: kresrek007_user
+    mute: kresrek007_mute
+    ban: kresrek007_ban
+
+# Zmienne
+variables:
+  nextLine: '%nextline%'
+  adminName: '%adminName%'
+  playerName: '%playerName%'
+  otherName: '%otherName%'
+  uuid: '%uuid%'
+  ipAddres: '%ipAddres%'
+  expireTime: '%expireTime%'
+  reason: '%reason%'
+  message: '%message%'
+  value: '%value%'
+  amount: '%amount%'
+  itemName: '%itemName%'
+  seconds: '%seconds%'
+  prefix: '%prefix%'
+  kitList: '%kitList%'
+  kitName: '%kitName%'
+  date: '%date%'
+  onlinePlayers: '%onlinePlayers%'
+  maxPlayers: '%maxPlayers%'
+
+# Uprawnienia
+permissions:
+  chatBypass: besttools.chat.bypass
+  kickBypass: besttools.kick.bypass
+  helpopSee: besttools.helpop.see
+  teleportNoDelay: besttools.helpop.see
+  enderchestOther: besttools.enderchest.other
+
+  # jednostka: sekunda
+cooldown:
+  # Oczekiwanie na teleportacje
+  teleport: 5
+  # Oczekiwanie na napisanie nast. wiad.
+  chat: 10
+  
+# Automatyczne wiadomosci
+autoMessage:
+  # Status
+  enabled: true
+  # Co ile sekund ma zostac wyslana wiad.
+  every: 120
+  # Przedrostek wiadomosci
+  prefix: '&8[&cBestTools BOT&8] &7'
+  # Wiadomosci
+  messages:
+  - Pierwsza wiadomosc..
+  - Druga wiadomosc..
+  
+# Formatowanie
+format:
+  # Ogloszenie
+  broadcast: '&eBest&6Tools &8> &e%message%'
+  # /helpop
+  helpop: '&8[&4%playerName%&8] &c%message%'
+  # Wyrzucenie z serwera
+  kick: '&cWyrzucono Cie przez &7%adminName%&c z powodu&7 %reason%'
+  # Prywatna wiadomosc
+  talk: '&8[&7%playerName% -> %otherName%&8] &f%message%'
+  # Chat
+  chat: '%prefix%%playerName% &8> &f%message%'
+  
+# Wydarzenia po smierci
+onDeath:
+  # Status [Po smierci wypada glowa]
+  dropSkull: true
+  # Status [Po smierci uderza piorun]
+  lighting: true
+  
+# Ochrona gracza 
+protection:
+  # Status
+  enabled: true
+  # Czas trwania ochrony
+  expired: 420
+  
+# Komendy
+
+# Przykladowa komenda:
+#  komenda: # TU NIC NIE ZMIENIAJ
+#    name: przykladowanazwa # Nazwa komendy (/NAZWA)
+#    description: przykladowy opis! # Opis komendy
+#    usage: /przykladowanazwa <argument 1> [argument 2] # Wyswietlana wiadomosc przy blednym uzyciu komendy
+#    permissions: przykladowa.permisja # wymagane permisje
+#    aliases: # Aliasy uzyj: [] jesli nie uzywasz aliasow
+#    - 'przykladowanazwa2' 
+#    - 'przykladowanazwa3' 
+
+
+commands:
+  ban:
+    name: ban
+    description: Ban command!
+    usage: /ban <player> <time (0 = perm)> [reason]
+    permissions: besttools.ban
+    aliases: []
+  banip:
+    name: banip
+    description: banip command!
+    usage: /banip <player> <time (0 = perm)> [reason]
+    permissions: besttools.banip
+    aliases: []
+  unban:
+    name: unban
+    description: unban command!
+    usage: /unban <player/ip>
+    permissions: besttools.unban
+    aliases:
+    - pardon
+  mute:
+    name: mute
+    description: mute command!
+    usage: /mute <player>
+    permissions: besttools.mute
+    aliases: []
+  unmute:
+    name: unmute
+    description: unmute command!
+    usage: /unmute <player>
+    permissions: besttools.unmute
+    aliases: []
+  chat:
+    name: chat
+    description: chat command!
+    usage: /chat <clear/disable/enable>
+    permissions: besttools.chat
+    aliases: []
+  clear:
+    name: clear
+    description: clear command!
+    usage: /clear [player]
+    permissions: besttools.clear
+    aliases: []
+  say:
+    name: say
+    description: say command!
+    usage: /say <message>
+    permissions: besttools.say
+    aliases:
+    - broadcast
+  enderchest:
+    name: enderchest
+    description: enderchest command!
+    usage: /enderchest [player]
+    permissions: besttools.enderchest
+    aliases:
+    - echest
+  feed:
+    name: feed
+    description: feed command!
+    usage: /feed [player]
+    permissions: besttools.feed
+    aliases: []
+  fly:
+    name: fly
+    description: fly command!
+    usage: /fly [player]
+    permissions: besttools.fly
+    aliases: []
+  back:
+    name: back
+    description: back command!
+    usage: /back
+    permissions: besttools.back
+    aliases: []
+  gamemode:
+    name: gamemode
+    description: gamemode command!
+    usage: /gamemode <mode> [player]
+    permissions: besttools.gamemode
+    aliases:
+    - gm
+  give:
+    name: give
+    description: give command!
+    usage: /give <player> <id:data> [num]
+    permissions: besttools.give
+    aliases: []
+  god:
+    name: god
+    description: god command!
+    usage: /god [player]
+    permissions: besttools.god
+    aliases: []
+  head:
+    name: head
+    description: head command!
+    usage: /head <player>
+    permissions: besttools.head
+    aliases: []
+  heal:
+    name: heal
+    description: heal command!
+    usage: /heal [player]
+    permissions: besttools.heal
+    aliases: []
+  helpop:
+    name: helpop
+    description: helpop command!
+    usage: /helpop <message>
+    permissions: besttools.helpop
+    aliases: []
+  home:
+    name: home
+    description: home command!
+    usage: /home
+    permissions: besttools.home
+    aliases: []
+  kit:
+    name: kit
+    description: kit command!
+    usage: /kit <name>
+    permissions: besttools.kit
+    aliases: []
+  sethome:
+    name: sethome
+    description: sethome command!
+    usage: /sethome
+    permissions: besttools.sethome
+    aliases: []
+  invsee:
+    name: invsee
+    description: invsee command!
+    usage: /invsee <player>
+    permissions: besttools.invsee
+    aliases: []
+  item:
+    name: item
+    description: item command!
+    usage: /item <arg>
+    permissions: besttools.item
+    aliases: []
+  kick:
+    name: kick
+    description: kick command!
+    usage: /kick <player> [reason]
+    permissions: besttools.kick
+    aliases: []
+  kill:
+    name: kill
+    description: kill command!
+    usage: /kill [player]
+    permissions: besttools.kill
+    aliases: []
+  talk:
+    name: talk
+    description: talk command!
+    usage: /talk <player> <message>
+    permissions: besttools.talk
+    aliases:
+    - msg
+  reply:
+    name: reply
+    description: reply command!
+    usage: /reply <message>
+    permissions: besttools.reply
+    aliases:
+    - r
+  list:
+    name: list
+    description: list command!
+    usage: /list
+    permissions: besttools.list
+    aliases: []
+  spawn:
+    name: spawn
+    description: spawn command!
+    usage: /spawn
+    permissions: besttools.spawn
+    aliases: []
+  setspawn:
+    name: setspawn
+    description: setspawn command!
+    usage: /setspawn
+    permissions: besttools.setspawn
+    aliases: []
+  time:
+    name: time
+    description: time command!
+    usage: /time <day/night>
+    permissions: besttools.time
+  whois:
+    name: whois
+    description: whois command!
+    usage: /whois
+    permissions: besttools.whois
+    aliases: []
+    
+# Config version
+version: '1.0'

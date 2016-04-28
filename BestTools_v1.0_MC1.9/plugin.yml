@@ -1,0 +1,20 @@
+name: BestTools
+version: 1.0 Beta
+main: pl.kresrek007.tools.Main
+softdepend: [Vault]
+
+permissions:
+  BestTools.default:
+    default: true
+  BestTools.player:
+    default: true
+    children:
+      besttools.back: true
+      besttools.helpop: true
+      besttools.home: true
+      besttools.kit: true
+      besttools.list: true
+      besttools.reply: true
+      besttools.sethome: true
+      besttools.spawn: true
+      besttools.talk: true
