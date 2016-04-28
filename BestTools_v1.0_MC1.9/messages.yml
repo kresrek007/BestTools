@@ -1,0 +1,114 @@
+#-=-=-=-=-=-=-=-=-=-=-=-=#
+#                        #  
+#   Name:    BestTools   #
+#   Version: 1.0 BETA    #
+#   Author:  Kresrek007  #
+#                        #
+#-=-=-=-=-=-=-=-=-=-=-=-=#
+
+# Przedrostek wyswietlany przed wiadomosciami
+pluginPrefix: "&eBest&6Tools &8> &e"
+
+# Brak uprawnien
+noPermissions: '&cBrak uprawnien! &8[&c%permission%&8]'
+
+# Brak mozliwosci wykonania komendy w konsoli
+onlyPlayer: '&cBrak mozliwosci wykonania komendy w konsoli!'
+
+# Blad podczas wykonywania komendy
+errorCommand: '&cBlad krytyczny podczas wykonywania komendy :('
+
+# Poprawne uzycie komendy
+defaultUsage: '&cPoprawne uzycie:&7 %usage%'
+
+# Brak gracza
+noFoundPlayer: '&cNie odnaleziono gracza &7%playerName%&c!'
+
+# Brak przedmiotu
+itemNull: '&cNie odnaleziono przedmiotu!'
+
+# Domyslny powod zbanowania/wyciszenia/wyrzucenia
+defaultReason: Domyslny powod
+
+# dolaczanie do serwera
+join: '&8[&a+&8] &a%playerName%'
+
+# wyjscie z serwera
+quit: '&8[&c-&8] &c%playerName%'
+
+# wartosci
+value:
+  never: nigdy
+  enabled: wloczony
+  enable: wlaczono
+  disabled: wylaczony
+  disable: wyloczono
+  server: konsola
+  you: ty
+  day: dzien
+  night: noc
+  cleared: wyczyszczony
+ban:
+  format:
+    uuid: '&cZostales zbanowany przez&7 %adminName%&c. %nextline%Powod: &7%reason%&c. %nextline%Wygasa:&7 %expireTime%'
+    ip: '&cTwoj adres IP zostal zbanowany przez&7 %adminName%&c. %nextline%Powod: &7%reason%&c. %nextline%Wygasa:&7 %expireTime%'
+  broadcast:
+    uuid: '&cGracz &7%playerName% &czostal zbanowany przez &7%adminName%&c. Powod: &7%reason% &cWygasa: &7%expireTime%'
+    ip: '&cIP &7%playerName% &czostal zbanowany przez &7%adminName%&c. Powod: &7%reason% &cWygasa: &7%expireTime%'
+  already: '&cGracz jest juz zbanowany!'
+  unban: '&cGracz &7%playerName% &czostal odbanowany przez &7%adminName%&c!'
+clearPlayer: '&cTwoj ekwipunek zostal wyczyszczony przez &7%adminName%&c.'
+clearSender: '&cEkwipunek &7%playerName% &czostal wyczyszczony!'
+flyPlayer: '&7%value% &cmozliwosc latania przez &7%adminName%&c.'
+flySender: '&7%value% &cmozliwosc latania dla &7%playerName%&c.'
+feedPlayer: '&cTwoj poziom glodu zostal zapelniony przez &7%adminName%&c.'
+feedSender: '&7%playerName% &cpoziom glodu zostal zapelniony!'
+gamemodePlayer: '&cGame mode zmieniono na &7%value% &cprzez &7%adminName%&c.'
+gamemodeSender: '&cGame mode &7%playerName% &czmieniono na &7%value%&c!'
+givePlayer: '&cOtrzymales &8(&7x%amount%&8) &7%itemName% &cod &7%adminName%&c.'
+giveSender: '&cGracz &7%playerName% &cptrzymal &8(&7x%amount%&8) &7%itemName%&c.'
+itemSender: '&cOtrzymales &8(&7x%amount%&8) &7%itemName%'
+godPlayer: '&7%value% &ctryb niesmiertelnosci przez &7%adminName%&c.'
+godSender: '&7%value% &ctryb niesmiertelnosci dla &7%playerName%&c.'
+healPlayer: '&cZostales uleczony przez &7%adminName%&c.'
+healSender: '&cGracz &7%playerName% &czostal uleczony!'
+homeSet: '&aDom zostal ustawiony!'
+mute:
+  broadcast: '&cGracz &7%playerName% &czostal wyciszony przez &7%adminName%&c. Powod: &7%reason% &cWygasa: &7%expireTime%'
+  already: '&cGracz jest juz wyciszony!'
+  unmute: '&cGracz &7%playerName% &codzyskal prawo do pisania przez &7%adminName%&c!'
+  triedMessage: '&cJestes wyciszony przez &7%adminName%&c. Powod: &7%reason%&c. Wygasa: &7%expireTime%&c.'
+replyNoPlayer: '&cNie masz komu odpisac!'
+spawnSet: '&aSpawn zostal ustawiony!'
+reloaded: '&aPrzeladowano plugin...'
+teleported: '&cTeleportacja...'
+teleportWait: '&cZa &7%seconds% sekund &cnastapi teleportacja!'
+teleportCanceled: '&cTeleportacja zostala anulowana!'
+chatCooldown: '&cZwolnij! Mozesz wyslac jedna wiadomosc na &7%seconds% sekund&c.'
+welcomeMessage:
+- '&8###'
+- '&7Nazwa uzytkownika:&c %playerName%'
+- '&7Adres IP:&c %ipAddres%'
+- '&7Graczy na serwerze: &c%onlinePlayers%&7/&c%maxPlayers%'
+- '&7Ten serwer uzywa BestTools by Kresrek007'
+- '&8###'
+chatAction: '&cChat zostal &7%value% &cprzez &7%adminName%&c.'
+kitNoFound: '&cNie odnaleziono zestawow!'
+kitSplit: '&c, &7'
+kitList: '&cDostepne zestawy: &7%kitList%'
+kitCooldown: '&cZestaw &7kitName &cmozesz wziasc dopiero &7%date%&c.'
+kitReceive: '&cOtrzymales zestaw &7%kitName%'
+playerList: '&cAktualnie na serwerze &7%online%&c/&7%maxPlayers%&c.'
+timeSet: '&cUstawiono czas na &7%value%&c.'
+giveHead: '&cOtrzymales glowe &7%playerName%&c'
+kill: '&cAdministrator &7%adminName% &czabil &7%playerName% &cza pomoca komendy!'
+whois:
+- '&8###'
+- '&7Nazwa uzytkownika: &c%playerName%'
+- '&7Adres IP: &c%ipAddres%'
+chatIsDisabled: '&cChat jest wylaczony!'
+protectionAttacker: '&cNie mozesz atakowac graczy, poniewaz posiadasz ochrone!'
+protectionOther: '&cNie mozesz zaatakowac tego gracza, poniewaz posiada ochrone!'
+
+# Messages version
+version: '1.0'

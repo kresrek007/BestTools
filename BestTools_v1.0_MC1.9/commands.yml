@@ -1,0 +1,15 @@
+#-=-=-=-=-=-=-=-=-=-=-=-=#
+#                        #  
+#   Name:    BestTools   #
+#   Version: 1.0 BETA    #
+#   Author:  Kresrek007  #
+#                        #  
+#-=-=-=-=-=-=-=-=-=-=-=-=#
+
+commands:
+  przykladowakomenda:
+    - "&aprzykladowa wiadomosc 1"
+    - "&cprzykladowa wiadomosc 2"
+  pomoc:
+    - "&a/cmd 1&c = opis cmd 1"
+    - "&a/cmd 2&c = opis cmd 2"
